@@ -33,7 +33,7 @@ void User::changePassword(const string& oldPassword, const string& newPassword)
 		throw WrongPasswordException();
 	}
 
-	UserValidator::isPasswordValid(password);
+	UserValidator::isPasswordValid(newPassword);
 	password = newPassword;
 }
 
