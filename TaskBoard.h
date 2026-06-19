@@ -12,7 +12,8 @@ public:
     TaskBoard() = default;
 
     void showTasks() const;
-    void addTask(ProductType product, unsigned quantity, double balance, unsigned score);
+    void addTask(ProductType product, unsigned quantity, double balance,
+        unsigned score,bool printMessage = true);
     bool removeTask(unsigned id);
     Task* getTask(unsigned id);
     void completeTask(unsigned id, Barn& barn, double& balance, unsigned& score);

@@ -43,10 +43,14 @@ void TaskBoard::completeTask(unsigned id, Barn& barn, double& balance, unsigned&
     throw TaskNotFoundException(id);
 }
 
-void TaskBoard::addTask(ProductType product, unsigned quantity, double balance, unsigned score)
+void TaskBoard::addTask(ProductType product, unsigned quantity, double balance, unsigned score, bool printMessage)
 {
     tasks.emplace_back(product, quantity, balance, score);
-    cout << "Task added succesfully." << '\n';
+
+    if (printMessage)
+    {
+        cout << "Task added succesfully." << '\n';
+    }
 }
 
 bool TaskBoard::removeTask(unsigned id)
