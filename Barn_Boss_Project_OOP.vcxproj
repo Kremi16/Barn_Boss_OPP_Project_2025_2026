@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{341a23b9-9d45-4277-8778-92ac8cafd97a}</ProjectGuid>
+    <RootNamespace>BarnBossProjectOOP</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp23</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Animal.cpp" />
+    <ClCompile Include="Barn.cpp" />
+    <ClCompile Include="Barn_Boss_Project_OOP.cpp" />
+    <ClCompile Include="Chicken.cpp" />
+    <ClCompile Include="Corn.cpp" />
+    <ClCompile Include="Cow.cpp" />
+    <ClCompile Include="Crop.cpp" />
+    <ClCompile Include="CroplandFullException.cpp" />
+    <ClCompile Include="Farm.cpp" />
+    <ClCompile Include="FarmExceptions.cpp" />
+    <ClCompile Include="FarmlandFullException.cpp" />
+    <ClCompile Include="FarmObject.cpp" />
+    <ClCompile Include="InsufficientBalanceException.cpp" />
+    <ClCompile Include="InsufficientBarnStockException.cpp" />
+    <ClCompile Include="InsufficientFundsException.cpp" />
+    <ClCompile Include="InsufficientProductsException.cpp" />
+    <ClCompile Include="InsufficientScoreException.cpp" />
+    <ClCompile Include="InsufficientStockException.cpp" />
+    <ClCompile Include="InvalidAnimalInputException.cpp" />
+    <ClCompile Include="InvalidCredentialsException.cpp" />
+    <ClCompile Include="InvalidCropInputException.cpp" />
+    <ClCompile Include="InvalidPasswordException.cpp" />
+    <ClCompile Include="InvalidPriceException.cpp" />
+    <ClCompile Include="InvalidUserTypeException.cpp" />
+    <ClCompile Include="ItemNotFoundException.cpp" />
+    <ClCompile Include="ManagerAlreadyExistsException.cpp" />
+    <ClCompile Include="Market.cpp" />
+    <ClCompile Include="MarketExceptions.cpp" />
+    <ClCompile Include="MarketItem.cpp" />
+    <ClCompile Include="MarketManager.cpp" />
+    <ClCompile Include="BarnBossException.cpp" />
+    <ClCompile Include="NegativeBalanceException.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="ProductNotFoundException.cpp" />
+    <ClCompile Include="ProductOutOfStockException.cpp" />
+    <ClCompile Include="ScoreBoard.cpp" />
+    <ClCompile Include="System.cpp" />
+    <ClCompile Include="Task.cpp" />
+    <ClCompile Include="TaskBoard.cpp" />
+    <ClCompile Include="TaskManager.cpp" />
+    <ClCompile Include="TaskNotFoundException.cpp" />
+    <ClCompile Include="TasksExceptions.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="UserAlreadyLoggedInException.cpp" />
+    <ClCompile Include="UserExceptions.cpp" />
+    <ClCompile Include="UsernameEmptyException.cpp" />
+    <ClCompile Include="UsernameTakenException.cpp" />
+    <ClCompile Include="UserValidator.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Wheat.cpp" />
+    <ClCompile Include="WrongPasswordException.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animal.h" />
+    <ClInclude Include="Barn.h" />
+    <ClInclude Include="Chicken.h" />
+    <ClInclude Include="Corn.h" />
+    <ClInclude Include="Cow.h" />
+    <ClInclude Include="Crop.h" />
+    <ClInclude Include="CroplandFullException.h" />
+    <ClInclude Include="Farm.h" />
+    <ClInclude Include="FarmExceptions.h" />
+    <ClInclude Include="FarmlandFullException.h" />
+    <ClInclude Include="FarmObject.h" />
+    <ClInclude Include="InsufficientBalanceException.h" />
+    <ClInclude Include="InsufficientBarnStockException.h" />
+    <ClInclude Include="InsufficientFundsException.h" />
+    <ClInclude Include="InsufficientProductsException.h" />
+    <ClInclude Include="InsufficientScoreException.h" />
+    <ClInclude Include="InsufficientStockException.h" />
+    <ClInclude Include="InvalidAnimalInputException.h" />
+    <ClInclude Include="InvalidCredentialsException.h" />
+    <ClInclude Include="InvalidCropInputException.h" />
+    <ClInclude Include="InvalidPasswordException.h" />
+    <ClInclude Include="InvalidPriceException.h" />
+    <ClInclude Include="InvalidUserTypeException.h" />
+    <ClInclude Include="ItemNotFoundException.h" />
+    <ClInclude Include="ManagerAlreadyExistsException.h" />
+    <ClInclude Include="Market.h" />
+    <ClInclude Include="MarketExceptions.h" />
+    <ClInclude Include="MarketItem.h" />
+    <ClInclude Include="MarketManager.h" />
+    <ClInclude Include="BarnBossException.h" />
+    <ClInclude Include="NegativeBalanceException.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="ProductNotFoundException.h" />
+    <ClInclude Include="ProductOutOfStockException.h" />
+    <ClInclude Include="ScoreBoard.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="Task.h" />
+    <ClInclude Include="TaskBoard.h" />
+    <ClInclude Include="TaskManager.h" />
+    <ClInclude Include="TaskNotFoundException.h" />
+    <ClInclude Include="TasksExceptions.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="UserAlreadyLoggedInException.h" />
+    <ClInclude Include="UserExceptions.h" />
+    <ClInclude Include="UsernameEmptyException.h" />
+    <ClInclude Include="UsernameTakenException.h" />
+    <ClInclude Include="UserValidator.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Wheat.h" />
+    <ClInclude Include="WrongPasswordException.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
