@@ -4,7 +4,6 @@
 class UserExceptions:public BarnBossException
 {
 public:
-	UserExceptions() = default;
 	explicit UserExceptions(const string& message);
 };
 

@@ -4,9 +4,10 @@
 
 class User
 {
-	friend class System;
-
 private:
+	friend class System;
+	friend class GameSerializer;
+
 	static constexpr size_t MIN_LEN_PASSWORD = 3;
 	static unsigned nextId;
 	unsigned id;

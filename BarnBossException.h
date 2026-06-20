@@ -9,7 +9,6 @@ private:
 	string message;
 
 public:
-	BarnBossException() = default;
 	explicit BarnBossException(const string& message);
 
 	const char* what()const noexcept;

@@ -1,8 +1,9 @@
 #pragma once
-#include"Player.h"
-#include"TaskManager.h"
-#include"MarketManager.h"
-#include"ScoreBoard.h"
+#include "Player.h"
+#include "TaskManager.h"
+#include "MarketManager.h"
+#include "ScoreBoard.h"
+#include "GameSerializer.h"
 
 class System
 {
@@ -21,6 +22,8 @@ private:
     shared_ptr<MarketManager> currentMarketManager() const;
 
     void advanceCycles();
+
+    friend class GameSerializer;
 
 public:
     System();
@@ -56,9 +59,6 @@ private:
     void openMarketCatalog() const;
     void restock(unsigned productId, unsigned quantity);
     void changePrice(unsigned productId, double newPrice);
-
-    void save() const;
-    void load();
 
     void handleCommand(const std::string& line);
 };
