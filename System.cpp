@@ -1,4 +1,5 @@
 #include "System.h"
+#include"UserFactory.h"
 #include <iostream>
 #include <sstream>
 #include <fstream>
@@ -58,7 +59,7 @@ void System::registerUser(const std::string& username, const std::string& passwo
 {
     try 
     {
-        auto user = User::createUser(username, password, type);
+        auto user = UserFactory::createUser(username, password, type);
         users.push_back(user);
         cout << "User registered successfully!\n";
     }

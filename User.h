@@ -33,6 +33,5 @@ public:
 
 	static unsigned getNextId();
 	static void setNextId(unsigned id);
-	static shared_ptr<User> createUser(const string& username, const string& password, const string& type);
 };
 

@@ -5,7 +5,6 @@
 #include"TaskManager.h"
 #include"InvalidCredentialsException.h"
 #include"WrongPasswordException.h"
-#include"InvalidUserTypeException.h"
 #include"UserAlreadyLoggedInException.h"
 
 unsigned User::nextId = 0;
@@ -74,22 +73,4 @@ unsigned User::getNextId()
 void User::setNextId(unsigned id)
 {
 	nextId = id;
-}
-
-shared_ptr<User> User::createUser(const string& username, const string& password,const string& type)
-{
-	if (type == "Player")
-	{
-		return make_shared<Player>(username, password);
-	}
-	else if (type == "TaskManager")
-	{
-		return make_shared<TaskManager>(username, password);
-	}
-	else if (type == "MarketManager")
-	{
-		return make_shared<MarketManager>(username, password);
-	}
-
-	throw InvalidUserTypeException();
 }
